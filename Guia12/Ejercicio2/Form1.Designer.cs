@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnSolicitar = new Button();
+            label1 = new Label();
+            lbMostrarValor = new Label();
+            SuspendLayout();
+            // 
+            // btnSolicitar
+            // 
+            btnSolicitar.Location = new Point(77, 40);
+            btnSolicitar.Name = "btnSolicitar";
+            btnSolicitar.Size = new Size(146, 25);
+            btnSolicitar.TabIndex = 0;
+            btnSolicitar.Text = "Solicitar Valor";
+            btnSolicitar.UseVisualStyleBackColor = true;
+            btnSolicitar.Click += btnSolicitar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(59, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Resultado";
+            // 
+            // lbMostrarValor
+            // 
+            lbMostrarValor.BackColor = SystemColors.ActiveCaption;
+            lbMostrarValor.Location = new Point(77, 77);
+            lbMostrarValor.Name = "lbMostrarValor";
+            lbMostrarValor.Size = new Size(146, 31);
+            lbMostrarValor.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(255, 154);
+            Controls.Add(lbMostrarValor);
+            Controls.Add(label1);
+            Controls.Add(btnSolicitar);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnSolicitar;
+        private Label label1;
+        private Label lbMostrarValor;
     }
 }
